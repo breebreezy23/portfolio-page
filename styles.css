@@ -13,12 +13,12 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #293241;
+    background-color: #22223B;
     padding: 15px;
 }
 
 .navbar a {
-    color: #EE6C4D;
+    color: #C9ADA7;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -35,19 +35,40 @@ body {
 }
 
 .header {
-    background-color: #E0FBFC;
+    background-color: white;
     color: #293241;
     text-align: center;
     padding: 50px;
 }
 
+.header-image {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.skills {
+    background-color: #4A4E69;
+    color: #22223B;
+    text-align: center;
+    padding: 50px;
+
+}
+
+h1 {
+    font-family: "luckiest guy";
+    font-size: 80px;
+}
+
 h3 {
-    color: #EE6C4D;
+    color: #22223B;
 
 }
 
 .projects {
-    background-color: #E0FBFC;
+    background-color: #F2E9E4;
     color: #293241 text-align: center;
     padding: 50px;
 }
@@ -58,4 +79,8 @@ h3 {
     flex-wrap: wrap;
 }
 
-.footer {}
+.footer {
+    background-color: #22223B;
+    color: #C9ADA7;
+    text-align: center;
+}
