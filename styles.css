@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Roboto;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -57,9 +57,34 @@ body {
 
 }
 
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.left-side,
+.right-side {
+    width: 50%;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: "luckiest guy";
+    font-size: 40px;
+}
+
 h1 {
     font-family: "luckiest guy";
     font-size: 80px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 55px;
+    font-weight: 300;
 }
 
 h3 {
