@@ -1,19 +1,30 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #333;
-    color: white;
+    background-color: #293241;
     padding: 15px;
 }
 
 .navbar a {
-    color: white;
+    color: #EE6C4D;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #F4A261;
 }
 
 @media (max-width: 600px) {
@@ -22,3 +33,29 @@ body {
         align-items: center;
     }
 }
+
+.header {
+    background-color: #E0FBFC;
+    color: #293241;
+    text-align: center;
+    padding: 50px;
+}
+
+h3 {
+    color: #EE6C4D;
+
+}
+
+.projects {
+    background-color: #E0FBFC;
+    color: #293241 text-align: center;
+    padding: 50px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer {}
