@@ -19,6 +19,13 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 h1 {
     font-family: "luckiest guy";
     font-size: 100px;
@@ -54,6 +61,17 @@ h3 {
     color: #F4A261;
 }
 
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #333;
+    /* Darker background on scroll */
+    padding: 10px 0;
+    /* Smaller padding to reduce size */
+}
+
 /* Header */
 
 .header {
@@ -71,7 +89,29 @@ h3 {
     padding-bottom: 20px;
 }
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header-image {
+    animation: rotate 20s infinite linear;
+}
+
 /* Skills + About Me */
+
+.about-image {
+    height: 350px;
+    width: auto;
+    border-radius: 50%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
 
 .about {
     background-color: #F2E9E4;
@@ -178,6 +218,23 @@ button:hover {
     background-color: #22223B;
     color: #C9ADA7;
     text-align: center;
+}
+
+.footer {
+    background-color: #22223B;
+    color: #C9ADA7;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #C9ADA7;
+    font-size: 24px;
+}
+
+.social-links a:hover {
+    color: #F4A261;
 }
 
 /* Night Mode */
