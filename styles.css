@@ -1,5 +1,92 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
 
+/* Custom Cursor */
+:root {
+    --color: 74, 78, 105;
+    --cursor-size: 20px;
+}
+
+* {
+    cursor: none;
+}
+
+.custom-cursor {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+
+    border: calc(var(--cursor-size) /30) solid #fff;
+    border-radius: 50%;
+
+    animation: cursor 800ms infinite alternate ease-in-out;
+    pointer-events: none;
+}
+
+.custom-cursor::before {
+    content: "";
+    display: block;
+    width: calc(var(--cursor-size) / 2);
+    height: calc(var(--cursor-size) / 2);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: calc(var(--cursor-size) / 6) solid rgba(var(--color), 0.5);
+
+    border-radius: 50%;
+
+    animation: cursor-before 800ms infinite alternate ease-in-out;
+}
+
+.custom-cursor.click {
+    animation: cursor-click 800ms normal ease-in-out;
+}
+
+@keyframes cursor {
+    from {
+        transform: scale(1);
+        border-color: #fff;
+    }
+
+    to {
+        transform: scale(1.5);
+        border-color: rgb(var(--color));
+    }
+}
+
+@keyframes cursor-before {
+    from {
+        transform: translate(-50%, -50%) scale(1);
+        border-color: rgba(var(--color), 0.5);
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1.5);
+        border-color: rgba(var(--color), 0.75);
+    }
+}
+
+@keyframes cursor-click {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2.5);
+        border-color: rgb(var(--color));
+    }
+}
+
+/* General */
+
 body {
     margin: 0;
     font-family: Roboto;
