@@ -93,6 +93,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: rgb(154, 140, 152);
+    background: linear-gradient(349deg, rgba(154, 140, 152, 1) 0%, rgba(201, 173, 167, 1) 33%, rgba(242, 233, 228, 1) 100%);
 }
 
 .content {
@@ -162,7 +164,6 @@ h3 {
 /* Header */
 
 .header {
-    background-color: #F2E9E4;
     color: #293241;
     text-align: center;
     padding: 50px;
@@ -209,7 +210,6 @@ h3 {
 }
 
 .about {
-    background-color: #F2E9E4;
     color: #293241;
     padding: 50px;
     display: flex;
@@ -237,7 +237,6 @@ h3 {
 }
 
 .skills {
-    background-color: #C9ADA7;
     color: #22223B;
     text-align: center;
     padding: 50px;
@@ -276,7 +275,6 @@ ul {
 
 /* Projects */
 .projects {
-    background-color: #4A4E69;
     color: #F2E9E4;
     /* Fix the font-color */
     text-align: center;
@@ -307,6 +305,33 @@ button:hover {
     background-color: #22223B;
 }
 
+.contact-button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: none;
+    outline: none;
+}
+
+.contact-button:hover {
+    background-color: #3B3A4A;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.contact-button:active {
+    transform: translateY(-1px);
+}
+
 /* Footer */
 
 .footer {
@@ -332,7 +357,59 @@ button:hover {
     color: #F4A261;
 }
 
-/* Night Mode */
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    --background: #28096b;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .5s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .5s;
+}
+
+input:checked+.slider {
+    background-color: #522ba7;
+}
+
+input:checked+.slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+/* Night Mode 
 .night-mode {
     background-color: #3B3A4A;
     color: #ecf0f1;
@@ -365,4 +442,20 @@ button:hover {
     border: none;
     background-color: transparent;
     font-size: 24px;
+}
+    */
+body.night-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.night-mode .navbar {
+    background-color: #555;
+}
+
+
+
+body.night-mode .content {
+    background: rgb(34, 34, 59);
+    background: linear-gradient(349deg, rgba(34, 34, 59, 1) 0%, rgba(74, 78, 105, 1) 33%, rgba(154, 140, 152, 1) 100%);
 }
