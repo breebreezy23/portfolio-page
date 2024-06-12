@@ -25,16 +25,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-document.getElementById('toggleNightMode').addEventListener('click', function () {
-    var body = document.body;
-    body.classList.toggle('night-mode');
+document.addEventListener('DOMContentLoaded', function () {
+    const nightModeSwitch = document.getElementById('nightModeSwitch');
 
-    // Check if night mode is active and change the button content
-    if (body.classList.contains('night-mode')) {
-        this.innerHTML = '☾'; // Moon emoji for night mode
-    } else {
-        this.innerHTML = '☼'; // Sun emoji for day mode
-    }
+    nightModeSwitch.addEventListener('change', function () {
+        if (this.checked) {
+            document.body.classList.add('night-mode');
+        } else {
+            document.body.classList.remove('night-mode');
+        }
+    });
 });
 
 window.addEventListener('scroll', function () {
