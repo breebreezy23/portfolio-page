@@ -19,7 +19,7 @@
     width: var(--cursor-size);
     height: var(--cursor-size);
 
-    border: calc(var(--cursor-size) /30) solid #fff;
+    border: calc(var(--cursor-size) /30) solid #9A8C98;
     border-radius: 50%;
 
     animation: cursor 800ms infinite alternate ease-in-out;
@@ -51,7 +51,7 @@
 @keyframes cursor {
     from {
         transform: scale(1);
-        border-color: #fff;
+        border-color: 154, 140, 152;
     }
 
     to {
@@ -162,11 +162,13 @@ h3 {
 /* Header */
 
 .header {
-    background-color: white;
+    background-color: #F2E9E4;
     color: #293241;
     text-align: center;
     padding: 50px;
 }
+
+/* Header Image */
 
 .header-image {
     height: 350px;
@@ -176,18 +178,24 @@ h3 {
     padding-bottom: 20px;
 }
 
-@keyframes rotate {
-    from {
+@keyframes rotate-side-to-side {
+
+    0%,
+    100% {
         transform: rotate(0deg);
     }
 
-    to {
-        transform: rotate(360deg);
+    25% {
+        transform: rotate(20deg);
+    }
+
+    75% {
+        transform: rotate(-20deg);
     }
 }
 
 .header-image {
-    animation: rotate 20s infinite linear;
+    animation: rotate-side-to-side 3s infinite linear;
 }
 
 /* Skills + About Me */
