@@ -115,6 +115,8 @@ body {
     }
 }
 
+/* Text */
+
 h1 {
     font-family: "luckiest guy";
     font-size: 100px;
@@ -134,16 +136,23 @@ h3 {
 /* Nav Bar */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #22223B;
-    padding: 15px;
+    max-width: 95%;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    background-color: #9A8C98;
 }
 
 .navbar a {
-    color: #C9ADA7;
+    color: #22223B;
     text-decoration: none;
     transition: color 0.3s ease;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 500;
 }
 
 .navbar a:hover {
@@ -334,14 +343,8 @@ button:hover {
 
 /* Footer */
 
-.footer {
-    background-color: #22223B;
-    color: #C9ADA7;
-    text-align: center;
-}
 
 .footer {
-    background-color: #22223B;
     color: #C9ADA7;
     text-align: center;
     padding: 20px;
@@ -375,7 +378,7 @@ button:hover {
 
 /* The slider */
 .slider {
-    --background: #28096b;
+    --background: #22223B;
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -395,18 +398,18 @@ button:hover {
     border-radius: 50%;
     left: 10%;
     bottom: 15%;
-    box-shadow: inset 8px -4px 0px 0px #fff000;
+    box-shadow: inset 8px -4px 0px 0px #fff;
     background: var(--background);
     transition: .5s;
 }
 
 input:checked+.slider {
-    background-color: #522ba7;
+    background-color: #C9ADA7;
 }
 
 input:checked+.slider:before {
     transform: translateX(100%);
-    box-shadow: inset 15px -4px 0px 15px #fff000;
+    box-shadow: inset 15px -4px 0px 15px #fff;
 }
 
 /* Night Mode 
@@ -444,18 +447,25 @@ input:checked+.slider:before {
     font-size: 24px;
 }
     */
-body.night-mode {
+/*body.night-mode {
     background-color: #333;
     color: #fff;
-}
+}*/
 
 body.night-mode .navbar {
-    background-color: #555;
+    background-color: #4A4E69;
+}
+
+body.night-mode .navbar a {
+    color: #C9ADA7;
+}
+
+body.night-mode .navbar a:hover {
+    color: #F2E9E4;
 }
 
 
-
-body.night-mode .content {
+body.night-mode {
     background: rgb(34, 34, 59);
     background: linear-gradient(349deg, rgba(34, 34, 59, 1) 0%, rgba(74, 78, 105, 1) 33%, rgba(154, 140, 152, 1) 100%);
 }
