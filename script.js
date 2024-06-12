@@ -70,4 +70,21 @@ window.addEventListener("mousemove", (event) => {
 
     cursor.style.left = `${x}px`;
     cursor.style.top = `${y}px`;
-}); 
+});
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    document.querySelectorAll('section').forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    document.querySelectorAll('.navbar a').forEach(a => {
+        a.classList.remove('active');
+        if (a.href.includes(current)) {
+            a.classList.add('active');
+        }
+    });
+});
