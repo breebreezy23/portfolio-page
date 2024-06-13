@@ -178,16 +178,33 @@ h3 {
     padding: 50px;
 }
 
-/* Header Image */
-
-.header-image {
-    height: 350px;
-    width: auto;
-    border-radius: 50%;
-    padding-top: 50px;
-    padding-bottom: 20px;
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Adjust this as needed */
+    justify-content: flex-start;
+    /* Aligns items to the left */
+    padding: 50px;
+    /* Adjust padding as needed */
 }
 
+.header-image {
+    height: 550px;
+    width: auto;
+    margin-right: 20px;
+    /* Adds some space between the image and the text */
+}
+
+.header h1,
+.header h2 {
+    text-align: center;
+    margin: auto;
+    /* Removes default margin */
+}
+
+
+/*
 @keyframes rotate-side-to-side {
 
     0%,
@@ -206,7 +223,7 @@ h3 {
 
 .header-image {
     animation: rotate-side-to-side 3s infinite linear;
-}
+} */
 
 /* Skills + About Me */
 
