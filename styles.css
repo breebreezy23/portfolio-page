@@ -119,6 +119,10 @@ body {
     }
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 /* Line Break */
 hr {
     width: 100%;
@@ -184,7 +188,7 @@ h4 {}
 }
 
 .navbar a:hover {
-    color: #F4A261;
+    color: #F2E9E4;
 }
 
 .navbar {
@@ -370,6 +374,15 @@ ul {
     border-radius: 20px;
     margin: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #F2E9E4;
+    transition: color 0.3s ease;
 }
 
 /* Button */
