@@ -321,11 +321,14 @@ h4 {}
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    margin-top: 50px;
 }
 
 .left-side,
 .right-side {
     width: 50%;
+    margin-top: 100px;
+    margin-bottom: 100px;
 
 }
 
