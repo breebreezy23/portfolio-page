@@ -119,12 +119,34 @@ body {
     }
 }
 
+/* Line Break */
+hr {
+    width: 100%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 30px 0;
+}
+
 /* Text */
+
+@keyframes fadeInMoveDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 h1 {
     font-family: "luckiest guy";
     font-size: 100px;
     margin: auto;
+    animation: fadeInMoveDown 1s ease-out forwards;
 }
 
 h2 {
@@ -136,6 +158,8 @@ h3 {
     color: #22223B;
 
 }
+
+h4 {}
 
 /* Nav Bar */
 
@@ -254,7 +278,16 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.about h4 {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    /* Removes default margin */
 }
 
 .left-text,
@@ -274,6 +307,8 @@ h3 {
     align-items: flex-start;
     /* Aligns left-text content to the left */
 }
+
+/* Skills */
 
 .skills {
     color: #22223B;
