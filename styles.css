@@ -10,6 +10,10 @@
     cursor: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .custom-cursor {
     position: absolute;
     z-index: 99;
@@ -192,7 +196,7 @@ h3 {
 .header-image {
     height: 550px;
     width: auto;
-    margin-right: 20px;
+    margin-right: 10px;
     /* Adds some space between the image and the text */
 }
 
