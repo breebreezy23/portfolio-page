@@ -212,9 +212,7 @@ h4 {
 
 .navbar.scrolled {
     background-color: #333;
-    /* Darker background on scroll */
     padding: 10px 0;
-    /* Smaller padding to reduce size */
 }
 
 /* Header */
@@ -247,7 +245,6 @@ h4 {
 .header h2 {
     text-align: center;
     margin: auto;
-    /* Removes default margin */
 }
 
 .down-arrow {
@@ -259,95 +256,15 @@ h4 {
     margin-bottom: 0;
 }
 
-/* Skills + About Me */
-
-/*.about-image {
-    height: 350px;
-    width: auto;
-    border-radius: 50%;
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-.about {
-    color: #293241;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 0;
-    background-color: #778DA9;
-}
-
-.about h4 {
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
-}
-
-.left-text,
-.right-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.right-text {
-    align-items: flex-end;
-}
-
-.left-text {
-    align-items: flex-start;
-}
-
-/* Skills */
-
-/*.skills {
-    color: #22223B;
-    text-align: center;
-    padding: 50px;
-    background-color: #778DA9;
-
-}
-
-.skills-list {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 50px;
-}
-
-.left-side,
-.right-side {
-    width: 50%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    font-family: Roboto;
-    font-size: 40px;
-}
-
-.reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: none;
-}
-*/
 
 /* Projects */
+
+.background {
+    background-color: #E0E1DD;
+    border-radius: 20px;
+    margin: 10px 200px;
+    justify-content: center;
+}
 
 .project-container {
     position: relative;
@@ -626,7 +543,6 @@ button:hover {
 }
 
 /* Footer */
-
 
 footer {
     position: relative;
